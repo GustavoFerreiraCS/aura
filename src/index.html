@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--
+  Assets em src/assets/: vídeos, projeto-*.png (portfólio), e src/assets_/video-camadas.mp4 (Build Sequence).
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Estúdio Aura — arquitetura e design de interiores de alto padrão em São Paulo. Luxo discreto, projetos autorais e curadoria permanente."
+    />
+    <title>Estúdio Aura — Arquitetura e Interiores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body>
+    <header class="site-header" id="#top">
+      <div class="container">
+        <a href="top" class="logo">Estúdio Aura</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Principal">
+          <a href="#top" aria-current="page">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#essencia">Essência</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="nav-panel" id="nav-panel" hidden>
+      <a href="#top">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#essencia">Essência</a>
+      <a href="#contato">Contato</a>
+    </div>
+
+    <main>
+      <section class="hero" aria-label="Abertura">
+        <div class="hero-video-wrap">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster=""
+            aria-hidden="true"
+          >
+            <source src="assets/interior-dark-video.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="display display--lg">Arquitetura de atitude</h1>
+          <p class="body-lg max-ch">
+            Espaços pensados como galeria privada: luz contida, materiais
+            nobres e silêncio gráfico. Cada ambiente traduz permanência, não
+            moda.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="#contato">Consulta privada</a>
+          </div>
+          <p style="margin: 2.5rem 0 0">
+            <a class="link-arrow" href="#build-sequence">
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 5v14M19 12l-7 7-7-7" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="build-sequence"
+        id="build-sequence"
+        aria-labelledby="build-sequence-heading"
+        data-build-sequence
+      >
+        <h2 id="build-sequence-heading" class="visually-hidden">Build sequence</h2>
+        <div class="build-sequence__pin">
+          <video
+            class="build-sequence__video"
+            id="build-sequence-video"
+            muted
+            playsinline
+            preload="auto"
+            aria-hidden="true"
+          >
+            <source src="assets/video-camadas.mp4" type="video/mp4" />
+          </video>
+          <div class="build-sequence__overlay" aria-hidden="true"></div>
+          <div class="build-sequence__content">
+            <article class="build-sequence__block build-sequence__block--left build-sequence__block--row1">
+              <p class="label text-gold">Fase I</p>
+              <h3 class="headline headline--md">Leitura do vazio</h3>
+              <p class="body-lg" style="margin: 0; color: var(--on-background)">
+                O projeto começa pelo que não se constrói: recortes de luz, sombra e
+                circulação. Cada plano responde ao anterior como numa galeria.
+              </p>
+            </article>
+            <article class="build-sequence__block build-sequence__block--right build-sequence__block--row2">
+              <p class="label text-gold">Fase II</p>
+              <h3 class="headline headline--md">Materialidade</h3>
+              <p class="body-lg" style="margin: 0; color: var(--on-background)">
+                Pedra, madeira e metal são escolhidos pela textura sob luz baixa.
+                A paleta permanece contida para que o espaço respire.
+              </p>
+            </article>
+            <article class="build-sequence__block build-sequence__block--left build-sequence__block--row3">
+              <p class="label text-gold">Fase III</p>
+              <h3 class="headline headline--md">Atmosfera final</h3>
+              <p class="body-lg" style="margin: 0; color: var(--on-background)">
+                Ajuste fino de cenas de uso, luminárias e acústica. A entrega é o
+                silêncio gráfico de um ambiente completo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-process" id="metodo" aria-labelledby="process-title">
+        <div class="container">
+          <div class="process-intro reveal">
+            <h2 id="process-title" class="headline headline--md">Metodologia</h2>
+            <p class="body-lg max-ch">
+              Do primeiro traço à entrega, o processo é linear no rigor e orgânico
+              na sensação. Três fases articulam tempo, orçamento e exclusividade.
+            </p>
+          </div>
+          <div class="process-steps reveal">
+            <article class="process-step">
+              <span class="label">01</span>
+              <h3>Conceito</h3>
+              <p>
+                Imersão no contexto, leitura do entorno e definição de narrativa
+                espacial. Mood, referências e paleta material antes de qualquer
+                prancha definitiva.
+              </p>
+            </article>
+            <article class="process-step">
+              <span class="label">02</span>
+              <h3>Desenvolvimento</h3>
+              <p>
+                Projeto executivo, especificações e curadoria de fornecedores.
+                Acompanhamento de obra com decisões rápidas e registro
+                documental contínuo.
+              </p>
+            </article>
+            <article class="process-step">
+              <span class="label">03</span>
+              <h3>Entrega</h3>
+              <p>
+                Comissionamento de luminárias, arte e mobiliário. Ajuste fino de
+                cenas de uso e entrega do manual de manutenção e garantias.
+              </p>
+            </article>
+          </div>
+          <div class="process-visual reveal">
+            <img
+              src="assets/projeto-sala.png"
+              alt="Living integrado com sofá curvo e iluminação indireta, referência de materialidade do escritório."
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-statement reveal" aria-hidden="false">
+        <blockquote>
+          A luz é o que dá vida aos espaços. Sem ela, a arquitetura é apenas
+          sombra.
+        </blockquote>
+      </section>
+
+      <section class="section-portfolio" id="projetos" aria-labelledby="portfolio-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 id="portfolio-title">Projetos selecionados</h2>
+            <a href="#contato">Agendar visita ao atelier</a>
+          </div>
+          <div class="masonry">
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-sala.png" alt="Sala de estar com sofá curvo, painel ripado e iluminação indireta." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Residencial</span>
+                <h3>Casa Jardins</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-cozinha.png" alt="Cozinha integrada com ilha central e acabamentos em tons neutros." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Apartamento</span>
+                <h3>Paulista II</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-quarto.png" alt="Suíte com cabeceira estofada, criados-mudo suspensos e luz de leitura." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Residencial</span>
+                <h3>Refúgio Alto de Pinheiros</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-sala-2.png" alt="Living ampliado com mesa de jantar integrada e luminária escultural." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Cobertura</span>
+                <h3>Horizonte Itaim</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-biblioteca.png" alt="Home office e biblioteca com estante vazada e cadeira de leitura." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Comercial</span>
+                <h3>Atelier Corporativo</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-banheiro.png" alt="Banheiro com pedra escura, espelho backlit e banheira freestanding." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Residencial</span>
+                <h3>Casa Litoral</h3>
+              </div>
+            </article>
+            <article class="masonry-item reveal">
+              <img src="assets/projeto-terracota.png" alt="Ambiente com paleta terracota, mesa de jantar e cadeiras esculturais." loading="lazy" />
+              <div class="masonry-caption">
+                <span class="label">Residencial</span>
+                <h3>Mesa Nove</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="essencia" aria-labelledby="about-title">
+        <div class="container">
+          <div class="about-portrait reveal">
+            <div class="about-visual" aria-hidden="true"></div>
+            <div class="about-card">
+              <p class="name">Marina Vasconcelos</p>
+              <p class="role">Fundadora e curadora</p>
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <span class="eyebrow">A essência</span>
+            <h2 id="about-title">Onde a estética encontra o propósito silencioso</h2>
+            <p class="body-lg">
+              O Estúdio Aura nasce da busca por ambientes que privilegiem
+              experiência tátil e emocional em vez de excesso visual. Cada
+              projeto é um diálogo entre cliente, luz e materialidade.
+            </p>
+            <p class="text-muted">
+              O luxo que defendemos é quieto: não pede atenção; retém pela
+              qualidade impecável e pela curadoria atemporal. Atuamos em São
+              Paulo com agenda deliberadamente limitada para preservar o padrão
+              de entrega.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" aria-labelledby="depo-title">
+        <div class="container">
+          <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 17h3l1-4V7H5v9h2zm8 0h3l1-4V7h-6v9h2z" />
+          </svg>
+          <h2 id="depo-title" class="visually-hidden">Depoimento</h2>
+          <p class="testimonial-text reveal">
+            O trabalho do Estúdio Aura transformou nosso apartamento em um lugar
+            que respira calma. A escolha de materiais e o desenho de luz criaram
+            uma sensação de hotel boutique, mas profundamente pessoal.
+          </p>
+          <div class="testimonial-meta reveal">
+            <p class="label">Helena Corso Montez</p>
+            <p class="sub">Residência Vila Nova Conceição</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact" id="contato" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-intro reveal">
+            <h2 id="contact-title">Inicie sua conversa privada</h2>
+            <p class="body-lg">
+              Conte em linhas gerais o tipo de projeto, prazo desejado e cidade.
+              Retornamos com disponibilidade de agenda e próximos passos.
+            </p>
+            <div class="contact-details">
+              <div class="contact-row">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M12 21s-8-4.5-8-11a8 8 0 0116 0c0 6.5-8 11-8 11z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div>
+                  <p class="label" style="margin-bottom: 0.35rem">Atelier São Paulo</p>
+                  <p class="text-muted">Alameda Gabriel Monteiro da Silva, 1420</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M3 8l9 6 9-6M3 8v12h18V8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>
+                  <p class="label" style="margin-bottom: 0.35rem">E-mail</p>
+                  <p class="text-muted">concierge@estudioaura.com.br</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.86.3 1.7.54 2.5a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.58-1.11a2 2 0 012.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0122 16.92z" />
+                </svg>
+                <div>
+                  <p class="label" style="margin-bottom: 0.35rem">WhatsApp</p>
+                  <p class="text-muted">+55 11 9999-9999</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social" aria-label="Redes sociais">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="0" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a href="https://wa.me/551199999999" aria-label="WhatsApp" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.13V24h-4v-6.93c0-1.66-.03-3.79-2.31-3.79-2.31 0-2.66 1.8-2.66 3.66V24h-4V8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-grid form-grid--2">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required />
+                <span class="field-error" id="nome-erro" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <span class="field-error" id="email-erro" role="alert"></span>
+              </div>
+            </div>
+            <div class="field" style="margin-top: 1.5rem">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+              <span class="field-error" id="mensagem-erro" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-logo">Estúdio Aura</p>
+        <nav class="footer-nav" aria-label="Rodapé">
+          <a href="#top">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#essencia">Essência</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Estúdio Aura. Todos os direitos reservados.</p>
+        <a class="back-top" href="#top">
+          Voltar ao topo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <a class="fab-wa" href="https://wa.me/551199999999" aria-label="Conversar no WhatsApp" rel="noopener noreferrer">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/landing.js" defer></script>
+  </body>
+</html>
